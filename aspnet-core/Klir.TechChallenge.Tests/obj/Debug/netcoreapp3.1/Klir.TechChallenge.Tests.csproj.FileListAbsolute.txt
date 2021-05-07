@@ -188,3 +188,11 @@ C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\obj\Debug\netco
 C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Tests.csproj.CopyComplete
 C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Tests.dll
 C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Tests.pdb
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Domain.dll
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Infra.dll
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Domain.pdb
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Infra.pdb
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\FluentAssertions.dll
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
