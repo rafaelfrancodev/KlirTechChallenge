@@ -963,6 +963,16 @@
         "runtime": {
           "bin/placeholder/Klir.TechChallenge.Infra.dll": {}
         }
+      },
+      "Klir.TechChallenge.Infra.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Klir.TechChallenge.Infra.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Klir.TechChallenge.Infra.CrossCutting.dll": {}
+        }
       }
     }
   },
@@ -3633,6 +3643,11 @@
       "type": "project",
       "path": "../Klir.TechChallenge.Infra/Klir.TechChallenge.Infra.csproj",
       "msbuildProject": "../Klir.TechChallenge.Infra/Klir.TechChallenge.Infra.csproj"
+    },
+    "Klir.TechChallenge.Infra.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../Klir.TechChallenge.Infra.CrossCutting/Klir.TechChallenge.Infra.CrossCutting.csproj",
+      "msbuildProject": "../Klir.TechChallenge.Infra.CrossCutting/Klir.TechChallenge.Infra.CrossCutting.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3640,6 +3655,7 @@
       "FluentAssertions >= 5.10.3",
       "Klir.TechChallenge.Domain >= 1.0.0",
       "Klir.TechChallenge.Infra >= 1.0.0",
+      "Klir.TechChallenge.Infra.CrossCutting >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
@@ -3678,6 +3694,9 @@
           "projectReferences": {
             "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj": {
               "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj"
+            },
+            "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.CrossCutting\\Klir.TechChallenge.Infra.CrossCutting.csproj": {
+              "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.CrossCutting\\Klir.TechChallenge.Infra.CrossCutting.csproj"
             },
             "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra\\Klir.TechChallenge.Infra.csproj": {
               "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra\\Klir.TechChallenge.Infra.csproj"

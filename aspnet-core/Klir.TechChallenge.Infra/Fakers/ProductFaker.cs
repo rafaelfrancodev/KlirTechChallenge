@@ -11,16 +11,16 @@ namespace Klir.TechChallenge.Infra.Fakers
         {
             return new List<Product>()
             {
-                new Product(1, "Product A", 20, PromotionFaker.CreateBuyOneGetOneFree()),
-                new Product(2, "Product B", 4, PromotionFaker.CreateThreeForTenEuro()),
-                new Product(3, "Product C", 2, null),
-                new Product(4, "Product D", 4, null)
+                new Product(1, "Product A", 20),
+                new Product(2, "Product B", 4),
+                new Product(3, "Product C", 2),
+                new Product(4, "Product D", 4)
             };
         }
 
         public static Product Create()
         {
-            return new Product(1, "Product A", 20, PromotionFaker.CreateBuyOneGetOneFree());
+            return new Product(1, "Product A", 20);
         }
     }
 }

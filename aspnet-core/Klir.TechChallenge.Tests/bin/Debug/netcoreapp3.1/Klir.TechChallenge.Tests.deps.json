@@ -11,6 +11,7 @@
           "FluentAssertions": "5.10.3",
           "Klir.TechChallenge.Domain": "1.0.0",
           "Klir.TechChallenge.Infra": "1.0.0",
+          "Klir.TechChallenge.Infra.CrossCutting": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "coverlet.collector": "1.2.0",
           "xunit": "2.4.0",
@@ -741,6 +742,11 @@
         "runtime": {
           "Klir.TechChallenge.Infra.dll": {}
         }
+      },
+      "Klir.TechChallenge.Infra.CrossCutting/1.0.0": {
+        "runtime": {
+          "Klir.TechChallenge.Infra.CrossCutting.dll": {}
+        }
       }
     }
   },
@@ -1127,6 +1133,11 @@
       "sha512": ""
     },
     "Klir.TechChallenge.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Klir.TechChallenge.Infra.CrossCutting/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

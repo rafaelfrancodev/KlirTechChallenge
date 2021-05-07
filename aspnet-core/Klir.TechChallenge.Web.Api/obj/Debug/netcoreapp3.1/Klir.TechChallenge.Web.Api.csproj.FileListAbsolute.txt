@@ -95,3 +95,5 @@ C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\net
 C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\netcoreapp3.1\staticwebassets\Klir.TechChallenge.Web.Api.StaticWebAssets.xml
 C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Api.dll
 C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\obj\Debug\netcoreapp3.1\Klir.TechChallenge.Web.Api.pdb
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Domain.dll
+C:\_TESTS\KlirTechChallenge\aspnet-core\Klir.TechChallenge.Web.Api\bin\Debug\netcoreapp3.1\Klir.TechChallenge.Domain.pdb

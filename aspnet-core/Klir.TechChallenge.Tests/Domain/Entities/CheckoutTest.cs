@@ -5,16 +5,17 @@ using Xunit;
 
 namespace Klir.TechChallenge.Tests.Domain.Entities
 {
-    public class PromotionTest
+    public class CheckoutTest
     {
         [Fact]
-        public void ShouldCreatePromotiontInstance()
+        public void ShouldCreateCartInstance()
         {
             //arr
-            var firtInstance = PromotionFaker.CreateThreeForTenEuro();
+            var cart = CheckoutFaker.CreateWithProducts();
+            var firtInstance = new Checkout(cart.Id, cart.Products); 
 
             //act
-            var secondInstance = new Promotion(firtInstance.Id, firtInstance.Description, firtInstance.MinQuantity, firtInstance.Price);
+            var secondInstance = new Checkout(firtInstance.Id, firtInstance.Products);
 
             //assert
             firtInstance.Should().BeEquivalentTo(secondInstance);

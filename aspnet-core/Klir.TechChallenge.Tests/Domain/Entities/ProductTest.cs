@@ -14,7 +14,7 @@ namespace Klir.TechChallenge.Tests.Domain.Entities
             var firtInstance = ProductFaker.Create();
 
             //act
-            var secondInstance = new Product(firtInstance.Id, firtInstance.Name, firtInstance.Price, firtInstance.Promotion);
+            var secondInstance = new Product(firtInstance.Id, firtInstance.Name, firtInstance.Price);
 
             //assert
             firtInstance.Should().BeEquivalentTo(secondInstance);
