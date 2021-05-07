@@ -1,6 +1,6 @@
 using System;
 
-namespace KlirTechChallenge.Web.Api
+namespace Klir.TechChallenge.Web.Api
 {
     public class WeatherForecast
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace KlirTechChallenge.Web.Api.Controllers
+namespace Klir.TechChallenge.Web.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
