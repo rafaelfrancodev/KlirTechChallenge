@@ -13,7 +13,7 @@ namespace Klir.TechChallenge.Infra.Fakers
 
         public static Promotion CreateThreeForTenEuro()
         {
-            return new Promotion(1, "3 for 10 Euro", 3, 10);
+            return new Promotion(2, "3 for 10 Euro", 3, 10);
         }
     }
 }

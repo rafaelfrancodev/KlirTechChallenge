@@ -9,15 +9,18 @@
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.14.1" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Klir.TechChallenge.Application\Klir.TechChallenge.Application.csproj" />
     <ProjectReference Include="..\Klir.TechChallenge.Domain\Klir.TechChallenge.Domain.csproj" />
     <ProjectReference Include="..\Klir.TechChallenge.Infra.CrossCutting\Klir.TechChallenge.Infra.CrossCutting.csproj" />
     <ProjectReference Include="..\Klir.TechChallenge.Infra\Klir.TechChallenge.Infra.csproj" />
+    <ProjectReference Include="..\Klir.TechChallenge.Web.Api\Klir.TechChallenge.Web.Api.csproj" />
   </ItemGroup>
 
 </Project>

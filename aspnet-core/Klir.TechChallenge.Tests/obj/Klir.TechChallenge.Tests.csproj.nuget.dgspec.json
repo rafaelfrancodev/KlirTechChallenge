@@ -4,6 +4,68 @@
     "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Tests\\Klir.TechChallenge.Tests.csproj": {}
   },
   "projects": {
+    "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\Klir.TechChallenge.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\Klir.TechChallenge.Application.csproj",
+        "projectName": "Klir.TechChallenge.Application",
+        "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\Klir.TechChallenge.Application.csproj",
+        "packagesPath": "C:\\Users\\Dell.Gamming\\.nuget\\packages\\",
+        "outputPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dell.Gamming\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj"
+              },
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.CrossCutting\\Klir.TechChallenge.Infra.CrossCutting.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.CrossCutting\\Klir.TechChallenge.Infra.CrossCutting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.114\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -114,6 +176,77 @@
         }
       }
     },
+    "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.IoC\\Klir.TechChallenge.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.IoC\\Klir.TechChallenge.Infra.IoC.csproj",
+        "projectName": "Klir.TechChallenge.Infra.IoC",
+        "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.IoC\\Klir.TechChallenge.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\Dell.Gamming\\.nuget\\packages\\",
+        "outputPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dell.Gamming\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\Klir.TechChallenge.Application.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\Klir.TechChallenge.Application.csproj"
+              },
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj"
+              },
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra\\Klir.TechChallenge.Infra.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra\\Klir.TechChallenge.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.114\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra\\Klir.TechChallenge.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -199,6 +332,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\Klir.TechChallenge.Application.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Application\\Klir.TechChallenge.Application.csproj"
+              },
               "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj": {
                 "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Domain\\Klir.TechChallenge.Domain.csproj"
               },
@@ -207,6 +343,9 @@
               },
               "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra\\Klir.TechChallenge.Infra.csproj": {
                 "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra\\Klir.TechChallenge.Infra.csproj"
+              },
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj"
               }
             }
           }
@@ -227,6 +366,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.1, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -252,6 +395,91 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.114\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj",
+        "projectName": "Klir.TechChallenge.Web.Api",
+        "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\Klir.TechChallenge.Web.Api.csproj",
+        "packagesPath": "C:\\Users\\Dell.Gamming\\.nuget\\packages\\",
+        "outputPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Web.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dell.Gamming\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.IoC\\Klir.TechChallenge.Infra.IoC.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.IoC\\Klir.TechChallenge.Infra.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

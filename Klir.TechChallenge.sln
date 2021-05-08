@@ -15,13 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Web.Api"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Tests", "aspnet-core\Klir.TechChallenge.Tests\Klir.TechChallenge.Tests.csproj", "{2698738B-6626-4968-814F-6B22068ACAEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klir.TechChallenge.Infra", "aspnet-core\Klir.TechChallenge.Infra\Klir.TechChallenge.Infra.csproj", "{3356BC8B-6973-4C16-B26B-25CD7E35882F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Infra", "aspnet-core\Klir.TechChallenge.Infra\Klir.TechChallenge.Infra.csproj", "{3356BC8B-6973-4C16-B26B-25CD7E35882F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klir.TechChallenge.Application", "aspnet-core\Klir.TechChallenge.Application\Klir.TechChallenge.Application.csproj", "{299249D4-B2C6-4D6B-B896-FB0FD8286AC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Application", "aspnet-core\Klir.TechChallenge.Application\Klir.TechChallenge.Application.csproj", "{299249D4-B2C6-4D6B-B896-FB0FD8286AC8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Domain", "aspnet-core\Klir.TechChallenge.Domain\Klir.TechChallenge.Domain.csproj", "{48EA3646-BC7A-4520-B8AB-00C3B306DC1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klir.TechChallenge.Infra.CrossCutting", "aspnet-core\Klir.TechChallenge.Infra.CrossCutting\Klir.TechChallenge.Infra.CrossCutting.csproj", "{CADD8627-59C9-4E71-9DC8-20091AC5DA68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klir.TechChallenge.Infra.CrossCutting", "aspnet-core\Klir.TechChallenge.Infra.CrossCutting\Klir.TechChallenge.Infra.CrossCutting.csproj", "{CADD8627-59C9-4E71-9DC8-20091AC5DA68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klir.TechChallenge.Infra.IoC", "aspnet-core\Klir.TechChallenge.Infra.IoC\Klir.TechChallenge.Infra.IoC.csproj", "{DAED866A-F887-4E74-873B-C08BF401D6D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klir.TechChallenge.Tests.Integraded", "aspnet-core\Klir.TechChallenge.Tests.Integraded\Klir.TechChallenge.Tests.Integraded.csproj", "{62B09FB7-DA85-4EF2-B7EF-C08C84BA7C42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +60,14 @@ Global
 		{CADD8627-59C9-4E71-9DC8-20091AC5DA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CADD8627-59C9-4E71-9DC8-20091AC5DA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CADD8627-59C9-4E71-9DC8-20091AC5DA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAED866A-F887-4E74-873B-C08BF401D6D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAED866A-F887-4E74-873B-C08BF401D6D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAED866A-F887-4E74-873B-C08BF401D6D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAED866A-F887-4E74-873B-C08BF401D6D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62B09FB7-DA85-4EF2-B7EF-C08C84BA7C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B09FB7-DA85-4EF2-B7EF-C08C84BA7C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B09FB7-DA85-4EF2-B7EF-C08C84BA7C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B09FB7-DA85-4EF2-B7EF-C08C84BA7C42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +80,8 @@ Global
 		{299249D4-B2C6-4D6B-B896-FB0FD8286AC8} = {F332D047-B9A7-4B85-8359-9328589BED29}
 		{48EA3646-BC7A-4520-B8AB-00C3B306DC1D} = {F332D047-B9A7-4B85-8359-9328589BED29}
 		{CADD8627-59C9-4E71-9DC8-20091AC5DA68} = {F332D047-B9A7-4B85-8359-9328589BED29}
+		{DAED866A-F887-4E74-873B-C08BF401D6D6} = {F332D047-B9A7-4B85-8359-9328589BED29}
+		{62B09FB7-DA85-4EF2-B7EF-C08C84BA7C42} = {999D48DF-22BC-40B8-A8C4-A9B5760B77AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B22C9792-C11E-4F83-91D8-5ACFDDC0FC5E}

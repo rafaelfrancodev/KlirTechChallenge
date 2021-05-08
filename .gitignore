@@ -341,4 +341,4 @@ healthchecksdb
 
 *.bd
 *.sqlite
-Modules/ConstruaApp.Api/construa.bd
+Modules/CBBoxApp.Api/construa.bd
