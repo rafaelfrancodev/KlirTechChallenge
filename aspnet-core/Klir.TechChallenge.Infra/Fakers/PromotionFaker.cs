@@ -6,9 +6,9 @@ namespace Klir.TechChallenge.Infra.Fakers
     [ExcludeFromCodeCoverage]
     public static class PromotionFaker
     {
-        public static Promotion CreateBuyTwoGetOneFree()
+        public static Promotion CreateBuyOneGetOneFree()
         {
-            return new Promotion(1, "Buy 2 Get 1 Free", 2, null);
+            return new Promotion(1, "Buy 1 Get 1 Free", 2, null);
         }
 
         public static Promotion CreateThreeForTenEuro()

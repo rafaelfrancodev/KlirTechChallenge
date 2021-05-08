@@ -12,7 +12,7 @@ namespace Klir.TechChallenge.Tests.Domain.ValueObjects
         {
             //arr
             var product = ProductFaker.Create();
-            var promotion = PromotionFaker.CreateBuyTwoGetOneFree();
+            var promotion = PromotionFaker.CreateBuyOneGetOneFree();
             var firstIntance = new ProductWithPromotionVo(product.Id, product.Name, product.Price, promotion);
 
             //act

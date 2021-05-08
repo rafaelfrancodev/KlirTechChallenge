@@ -13,7 +13,7 @@ namespace Klir.TechChallenge.Infra.Fakers
             return new List<ProductPromotion>()
             {
                 new ProductPromotion(new Product(1, "Product A", 20),
-                    PromotionFaker.CreateBuyTwoGetOneFree()),
+                    PromotionFaker.CreateBuyOneGetOneFree()),
 
                 new ProductPromotion(new Product(2, "Product B", 4),
                     PromotionFaker.CreateThreeForTenEuro()),

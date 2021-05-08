@@ -12,7 +12,7 @@ namespace Klir.TechChallenge.Tests.Domain.Entities
         {
             //arr
             var product = ProductFaker.Create();
-            var promotion = PromotionFaker.CreateBuyTwoGetOneFree();
+            var promotion = PromotionFaker.CreateBuyOneGetOneFree();
             var firtInstance = new ProductPromotion(product, promotion);
 
             //act

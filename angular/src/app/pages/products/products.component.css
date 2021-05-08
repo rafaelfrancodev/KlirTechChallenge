@@ -1,0 +1,35 @@
+.cards-product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.card-product {
+  flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.product-title {
+  font-size: 24px;
+}
+
+.product-price {
+  font-size: 20px;
+  float: left;
+  width: 49%;
+  font-weight: bold;
+}
+
+.product-promotion {
+  text-align: center;
+  float: right;
+  font-size: 11px;
+  width: 49%;
+  background-color: darkseagreen;
+  font-weight: bold;
+}
+
+.input-quantity {
+  width: 80px;
+}
