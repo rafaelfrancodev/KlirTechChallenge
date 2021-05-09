@@ -7,11 +7,11 @@ namespace Klir.TechChallenge.Domain.Entities
     public class Checkout
     {
         public Guid Id { get; }
-        public IEnumerable<ShoppingCartItem> Products { get; }
+        public List<ShoppingCartItem> Products { get; }
 
         public decimal Total => GetTotal();
 
-        public Checkout(Guid id, IEnumerable<ShoppingCartItem> products)
+        public Checkout(Guid id, List<ShoppingCartItem> products)
         {
             Id = id;
             Products = products;    
