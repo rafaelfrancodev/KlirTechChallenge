@@ -4,8 +4,8 @@ namespace Klir.TechChallenge.Domain.Entities
 {
     public class ShoppingCartItem
     {
-        public Guid Id { get; set; }
-        public Guid CheckoutId { get; set; }
+        public Guid Id { get; }
+        public Guid CheckoutId { get; }
         public Product Product { get; }
         public int Quantity { get; set; }
         public decimal Price { get; }

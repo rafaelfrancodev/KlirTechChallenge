@@ -4,12 +4,17 @@
     {
         public int Id { get; }
         public string Name { get;  }
-        public decimal Price { get;  }
+        public decimal Price { get; set; }
 
         public Product(int id, string name, decimal price)
         {
             Id = id;
             Name = name;
+            Price = price;
+        }
+
+        public void SetPrice(decimal price)
+        {
             Price = price;
         }
     }

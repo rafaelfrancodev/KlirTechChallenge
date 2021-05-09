@@ -10,7 +10,7 @@ namespace Klir.TechChallenge.Infra.IoC.Repository
     {
         internal void ChildServiceRegister(IServiceCollection services)
         {
-            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddSingleton<IProductRepository, ProductRepository>();
         }
     }
 }

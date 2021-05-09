@@ -8,7 +8,7 @@ namespace Klir.TechChallenge.Application.CheckoutAppService.Mappers
     {
         public static ShoppingCartItem MapperShoppingCartInputToDomain(this ShoppingCartItemInput input)
         {
-            return new ShoppingCartItem(input.Id, input.CheckoutId, input.Product, input.Quantity, input.Price);
+            return new ShoppingCartItem(input.Id, input.CheckoutId, new Product(input.Product.Id, input.Product.Name, 0), input.Quantity, 0);
         }
 
         public static CheckoutViewModel MapperCheckoutDomainToViewModel(this Checkout checkout)

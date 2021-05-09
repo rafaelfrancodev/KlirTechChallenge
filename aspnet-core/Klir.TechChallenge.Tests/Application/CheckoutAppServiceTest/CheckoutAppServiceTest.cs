@@ -1,11 +1,11 @@
 ﻿using FluentAssertions;
 using Klir.TechChallenge.Application.CheckoutAppService;
 using Klir.TechChallenge.Application.CheckoutAppService.Input;
+using Klir.TechChallenge.Domain.Entities;
 using Klir.TechChallenge.Domain.Interfaces;
 using Klir.TechChallenge.Infra.Fakers;
 using Moq;
 using System.Linq;
-using Klir.TechChallenge.Domain.Entities;
 using Xunit;
 
 namespace Klir.TechChallenge.Tests.Application.CheckoutAppServiceTest
@@ -43,9 +43,10 @@ namespace Klir.TechChallenge.Tests.Application.CheckoutAppServiceTest
             //arr
             var shoppingCartItems = CheckoutFaker.CreateWithProducts();
             var shoppingCartItem = shoppingCartItems.Products.FirstOrDefault();
+            var shoppingCartItemProduct = new ShoppingCartItemProductInput() { Id = shoppingCartItem.Product.Id, Name = shoppingCartItem.Product.Name};
             var shoppingCartInput =
-                new ShoppingCartItemInput(shoppingCartItem.Id, shoppingCartItem.CheckoutId, shoppingCartItem.Product,
-                    shoppingCartItem.Quantity, shoppingCartItem.Price);
+                new ShoppingCartItemInput(shoppingCartItem.Id, shoppingCartItem.CheckoutId, shoppingCartItemProduct,
+                    shoppingCartItem.Quantity);
             _checkoutDomainServiceMock.Setup(x => x.AddCartItem(It.IsAny<ShoppingCartItem>())).Returns(shoppingCartItems);
 
             //act
@@ -64,9 +65,10 @@ namespace Klir.TechChallenge.Tests.Application.CheckoutAppServiceTest
             //arr
             var shoppingCartItems = CheckoutFaker.CreateWithProducts();
             var shoppingCartItem = shoppingCartItems.Products.FirstOrDefault();
+            var shoppingCartItemProduct = new ShoppingCartItemProductInput() { Id = shoppingCartItem.Product.Id, Name = shoppingCartItem.Product.Name };
             var shoppingCartInput =
-                new ShoppingCartItemInput(shoppingCartItem.Id, shoppingCartItem.CheckoutId, shoppingCartItem.Product,
-                    shoppingCartItem.Quantity, shoppingCartItem.Price);
+                new ShoppingCartItemInput(shoppingCartItem.Id, shoppingCartItem.CheckoutId, shoppingCartItemProduct,
+                    shoppingCartItem.Quantity);
             _checkoutDomainServiceMock.SetupSequence(x => x.AddCartItem(It.IsAny<ShoppingCartItem>())).Returns(shoppingCartItems);
             shoppingCartItem.SetQuantity(2);
             shoppingCartItems.Products.FirstOrDefault().Quantity = 2;
@@ -89,9 +91,11 @@ namespace Klir.TechChallenge.Tests.Application.CheckoutAppServiceTest
             var shoppingCartItems = CheckoutFaker.CreateWithProducts();
             var shoppingCartItemsEmpty = CheckoutFaker.Create();
             var shoppingCartItem = shoppingCartItems.Products.FirstOrDefault();
+            var shoppingCartItemProduct = new ShoppingCartItemProductInput() { Id = shoppingCartItem.Product.Id, Name = shoppingCartItem.Product.Name };
             var shoppingCartInput =
-                new ShoppingCartItemInput(shoppingCartItem.Id, shoppingCartItem.CheckoutId, shoppingCartItem.Product,
-                    shoppingCartItem.Quantity, shoppingCartItem.Price);
+                new ShoppingCartItemInput(shoppingCartItem.Id, shoppingCartItem.CheckoutId, shoppingCartItemProduct
+                    ,
+                    shoppingCartItem.Quantity);
 
             _checkoutDomainServiceMock.Setup(x => x.RemoveCartItem(It.IsAny<ShoppingCartItem>())).Returns(shoppingCartItemsEmpty);
             
