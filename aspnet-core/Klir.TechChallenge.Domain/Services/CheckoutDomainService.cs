@@ -9,7 +9,7 @@ namespace Klir.TechChallenge.Domain.Services
     public class CheckoutDomainService : ICheckoutDomainService
     {
 
-        private Checkout _dataCheckout;
+        private readonly Checkout _dataCheckout;
 
         public CheckoutDomainService()
         {

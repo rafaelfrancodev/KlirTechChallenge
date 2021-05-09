@@ -6,7 +6,6 @@ namespace Klir.TechChallenge.Domain.Interfaces
     {
         Checkout AddCartItem(ShoppingCartItem cartItem);
         Checkout RemoveCartItem(ShoppingCartItem cartItem);
-
         Checkout GetCheckout();
     }
 }
