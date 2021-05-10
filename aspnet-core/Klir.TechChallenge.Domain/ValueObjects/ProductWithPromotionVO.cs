@@ -6,7 +6,7 @@ namespace Klir.TechChallenge.Domain.ValueObjects
     {
         public int Id { get; }
         public string Name { get; }
-        public decimal Price { get; }
+        public decimal Price { get; set; }
         public Promotion Promotion { get; }
 
         public ProductWithPromotionVo(int id, string name, decimal price, Promotion promotion)
@@ -15,6 +15,11 @@ namespace Klir.TechChallenge.Domain.ValueObjects
             Name = name;
             Price = price;
             Promotion = promotion;  
+        }
+
+        public void SetPrice(decimal price)
+        {
+            Price = price;
         }
     }
 }

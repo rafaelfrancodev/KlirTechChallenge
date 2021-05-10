@@ -35,7 +35,7 @@ namespace Klir.TechChallenge.Domain.Services
                 if (product != null)
                 {
                     cartItem.Product.SetPrice(product.Price);
-                    _dataCheckout.Products.Add(new ShoppingCartItem(Guid.NewGuid(), _dataCheckout.Id, cartItem.Product,
+                    _dataCheckout.Products.Add(new ShoppingCartItem(Guid.NewGuid(), _dataCheckout.Id, product,
                         cartItem.Quantity, product.Price));
                 }
             }

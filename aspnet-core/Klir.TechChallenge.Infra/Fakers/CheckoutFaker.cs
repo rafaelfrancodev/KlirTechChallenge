@@ -1,6 +1,7 @@
 ﻿using Klir.TechChallenge.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using Klir.TechChallenge.Domain.ValueObjects;
 
 namespace Klir.TechChallenge.Infra.Fakers
 {
@@ -20,11 +21,12 @@ namespace Klir.TechChallenge.Infra.Fakers
         public static List<ShoppingCartItem> CreateItems(Guid cartId)
         {
             var product = ProductFaker.Create();
+            var productVO = new ProductWithPromotionVo(product.Id, product.Name, product.Price, null);
 
 
             return new List<ShoppingCartItem>(new List<ShoppingCartItem>()
             {
-                new ShoppingCartItem(Guid.NewGuid(), cartId, product, 1, product.Price)
+                new ShoppingCartItem(Guid.NewGuid(), cartId, productVO, 1, product.Price)
             });
         }
 

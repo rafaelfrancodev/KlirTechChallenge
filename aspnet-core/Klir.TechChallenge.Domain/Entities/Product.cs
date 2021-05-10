@@ -12,10 +12,5 @@
             Name = name;
             Price = price;
         }
-
-        public void SetPrice(decimal price)
-        {
-            Price = price;
-        }
     }
 }

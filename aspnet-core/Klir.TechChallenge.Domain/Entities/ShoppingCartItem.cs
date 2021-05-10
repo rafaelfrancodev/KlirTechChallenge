@@ -1,4 +1,5 @@
 ﻿using System;
+using Klir.TechChallenge.Domain.ValueObjects;
 
 namespace Klir.TechChallenge.Domain.Entities
 {
@@ -6,12 +7,12 @@ namespace Klir.TechChallenge.Domain.Entities
     {
         public Guid Id { get; }
         public Guid CheckoutId { get; }
-        public Product Product { get; }
+        public ProductWithPromotionVo Product { get; }
         public int Quantity { get; set; }
         public decimal Price { get; }
         public decimal Total => Price * Quantity;
 
-        public ShoppingCartItem(Guid id, Guid cartId, Product product, int quantity, decimal price)
+        public ShoppingCartItem(Guid id, Guid cartId, ProductWithPromotionVo product, int quantity, decimal price)
         {
             Id = id;
             CheckoutId = cartId;
