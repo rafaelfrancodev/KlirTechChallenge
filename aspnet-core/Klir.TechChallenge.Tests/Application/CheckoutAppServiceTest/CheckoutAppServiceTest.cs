@@ -55,8 +55,6 @@ namespace Klir.TechChallenge.Tests.Application.CheckoutAppServiceTest
             //asset
             result.Products.Count.Should().Be(1);
             result.Products.FirstOrDefault().Quantity.Should().Be(1);
-            result.Total.Should().Be(20);
-
         }
 
         [Fact]
@@ -80,8 +78,6 @@ namespace Klir.TechChallenge.Tests.Application.CheckoutAppServiceTest
             //asset
             result.Products.Count.Should().Be(1);
             result.Products.FirstOrDefault().Quantity.Should().Be(2);
-            result.Products.FirstOrDefault().Total.Should().Be(40);
-            result.Total.Should().Be(40);
         }
 
         [Fact]

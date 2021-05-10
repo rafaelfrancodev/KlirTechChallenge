@@ -2060,6 +2060,9 @@
       "Klir.TechChallenge.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Klir.TechChallenge.Infra.CrossCutting": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Klir.TechChallenge.Domain.dll": {}
         },

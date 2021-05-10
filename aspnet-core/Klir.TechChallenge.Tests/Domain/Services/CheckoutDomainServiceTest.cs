@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using FluentAssertions;
 using Klir.TechChallenge.Domain.Entities;
+using Klir.TechChallenge.Domain.Interfaces;
 using Klir.TechChallenge.Domain.Interfaces.Repositories;
 using Klir.TechChallenge.Domain.Services;
 using Klir.TechChallenge.Domain.ValueObjects;
@@ -14,11 +15,13 @@ namespace Klir.TechChallenge.Tests.Domain.Services
     {
         private CheckoutDomainService _checkoutDomainService;
         private readonly Mock<IProductRepository> _productRepositoryMock;
+        private readonly Mock<IProductPromotionDomainService> _productPromotionDomainServiceMock;
 
         public CheckoutDomainServiceTest()
         {
             _productRepositoryMock = new Mock<IProductRepository>();
-            _checkoutDomainService = new  CheckoutDomainService(_productRepositoryMock.Object);
+            _productPromotionDomainServiceMock = new Mock<IProductPromotionDomainService>();
+            _checkoutDomainService = new  CheckoutDomainService(_productRepositoryMock.Object, _productPromotionDomainServiceMock.Object);
         }
 
         [Fact]
@@ -37,7 +40,8 @@ namespace Klir.TechChallenge.Tests.Domain.Services
             var productsPromotion = ProductPromotionFaker.CreateList();
             var productsPromotionVo = productsPromotion.Select(x =>
                 new ProductWithPromotionVo(x.Product.Id, x.Product.Name, x.Product.Price, x.Promotion));
-
+            _productPromotionDomainServiceMock
+                .Setup(x => x.ApplyRules(It.IsAny<int>(), It.IsAny<ProductWithPromotionVo>())).Returns(20);
             _productRepositoryMock.Setup(x => x.GetWithPromotion()).Returns(productsPromotionVo);
 
             //act
@@ -59,7 +63,8 @@ namespace Klir.TechChallenge.Tests.Domain.Services
             var productsPromotion = ProductPromotionFaker.CreateList();
             var productsPromotionVo = productsPromotion.Select(x =>
                 new ProductWithPromotionVo(x.Product.Id, x.Product.Name, x.Product.Price, x.Promotion));
-
+            _productPromotionDomainServiceMock
+                .Setup(x => x.ApplyRules(It.IsAny<int>(), It.IsAny<ProductWithPromotionVo>())).Returns(40);
             _productRepositoryMock.Setup(x => x.GetWithPromotion()).Returns(productsPromotionVo);
             _checkoutDomainService.AddCartItem(shoppingCartItem);
 

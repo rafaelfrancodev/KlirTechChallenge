@@ -4,17 +4,20 @@ using Klir.TechChallenge.Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Klir.TechChallenge.Domain.Services
 {
     public class CheckoutDomainService : ICheckoutDomainService
     {
         private readonly IProductRepository _productRepository;
+        private readonly IProductPromotionDomainService _productPromotionDomainService;
         private readonly Checkout _dataCheckout;
 
-        public CheckoutDomainService(IProductRepository productRepository)
+        public CheckoutDomainService(IProductRepository productRepository, IProductPromotionDomainService productPromotionDomainService)
         {
             _productRepository = productRepository;
+            _productPromotionDomainService = productPromotionDomainService;
             _dataCheckout = new Checkout(Guid.NewGuid(), new List<ShoppingCartItem>());
         }
 
@@ -35,14 +38,34 @@ namespace Klir.TechChallenge.Domain.Services
                 if (product != null)
                 {
                     cartItem.Product.SetPrice(product.Price);
-                    _dataCheckout.Products.Add(new ShoppingCartItem(Guid.NewGuid(), _dataCheckout.Id, product,
-                        cartItem.Quantity, product.Price));
+                    var applyIfHasPromotion = _productPromotionDomainService.ApplyRules(cartItem.Quantity, product);
+                    var shoppingCartItem = new ShoppingCartItem(Guid.NewGuid(), _dataCheckout.Id, product, cartItem.Quantity, product.Price);
+                    if (shoppingCartItem.Product.Promotion != null)
+                    {
+                        shoppingCartItem.SetTotalHasPromotion(applyIfHasPromotion);
+                    }
+                    else
+                    {
+                        shoppingCartItem.SetTotal();
+                    }
+                    _dataCheckout.Products.Add(shoppingCartItem);
                 }
             }
             else
             {
                 foreach (var x in _dataCheckout.Products.Where(x => x.Product.Id == cartItem.Product.Id))
                 {
+                    x.Product.SetPrice(product.Price);
+                    var applyIfHasPromotion = _productPromotionDomainService.ApplyRules(cartItem.Quantity, x.Product);
+                    var shoppingCartItem = new ShoppingCartItem(Guid.NewGuid(), _dataCheckout.Id, x.Product, cartItem.Quantity, x.Product.Price);
+                    if (shoppingCartItem.Product.Promotion != null)
+                    {
+                        x.SetTotalHasPromotion(applyIfHasPromotion);
+                    }
+                    else
+                    {
+                        x.SetTotal();
+                    }
                     x.SetQuantity(cartItem.Quantity);
                     break;
                 }

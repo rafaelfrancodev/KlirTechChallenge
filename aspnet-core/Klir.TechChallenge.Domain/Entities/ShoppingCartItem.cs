@@ -10,7 +10,7 @@ namespace Klir.TechChallenge.Domain.Entities
         public ProductWithPromotionVo Product { get; }
         public int Quantity { get; set; }
         public decimal Price { get; }
-        public decimal Total => Price * Quantity;
+        public decimal Total { get; set;  }
 
         public ShoppingCartItem(Guid id, Guid cartId, ProductWithPromotionVo product, int quantity, decimal price)
         {
@@ -24,6 +24,16 @@ namespace Klir.TechChallenge.Domain.Entities
         public void SetQuantity(int quantity)
         {
             Quantity = quantity;
+        }
+
+        public void SetTotal()
+        {
+            Total = Price * Quantity;
+        }
+
+        public void SetTotalHasPromotion(decimal total)
+        {
+            Total = total;
         }
     }
 }

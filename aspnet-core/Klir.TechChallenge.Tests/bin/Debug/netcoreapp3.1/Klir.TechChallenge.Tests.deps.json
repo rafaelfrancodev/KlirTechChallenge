@@ -1727,6 +1727,9 @@
         }
       },
       "Klir.TechChallenge.Domain/1.0.0": {
+        "dependencies": {
+          "Klir.TechChallenge.Infra.CrossCutting": "1.0.0"
+        },
         "runtime": {
           "Klir.TechChallenge.Domain.dll": {}
         }

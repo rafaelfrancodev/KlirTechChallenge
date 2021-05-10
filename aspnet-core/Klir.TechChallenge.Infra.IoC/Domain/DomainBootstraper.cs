@@ -12,6 +12,7 @@ namespace Klir.TechChallenge.Infra.IoC.Domain
         {
             services.AddSingleton<ICheckoutDomainService, CheckoutDomainService>();
             services.AddScoped<IProductDomainService, ProductDomainService>();
+            services.AddSingleton<IProductPromotionDomainService, ProductPromotionDomainService>();
         }
     }
 }

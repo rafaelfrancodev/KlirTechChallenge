@@ -91,7 +91,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.CrossCutting\\Klir.TechChallenge.Infra.CrossCutting.csproj": {
+                "projectPath": "C:\\_TESTS\\KlirTechChallenge\\aspnet-core\\Klir.TechChallenge.Infra.CrossCutting\\Klir.TechChallenge.Infra.CrossCutting.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
