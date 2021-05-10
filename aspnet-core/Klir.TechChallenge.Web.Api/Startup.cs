@@ -28,11 +28,10 @@ namespace Klir.TechChallenge.Web.Api
         {
             services.AddCors(options =>
             {
-                options.AddPolicy(name: AllowSpecificOrigins,
-                                  builder =>
-                                  {
-                                      builder.WithOrigins("http://localhost:4200");
-                                  });
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
             });
 
             AddSwagger(services);
@@ -50,7 +49,7 @@ namespace Klir.TechChallenge.Web.Api
 
             app.UseRouting();
 
-            app.UseCors(AllowSpecificOrigins);
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
