@@ -18,9 +18,9 @@
     <mat-card-actions>
       <mat-form-field class="input-quantity">
         <mat-label>Quantity</mat-label>
-        <input type="number" matInput placeholder="1" value="1">
+        <input type="number" (change)="changeQuantityProduct($event, product)" matInput placeholder="1" value="1">
       </mat-form-field>
-      <button mat-button color="primary">
+      <button mat-button (click)="addCartItem(product)" color="primary">
         <mat-icon>shopping_cart</mat-icon>
         Buy
       </button>
