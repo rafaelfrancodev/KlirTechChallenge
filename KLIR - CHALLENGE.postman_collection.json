@@ -159,17 +159,8 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"product\": {\r\n        \"id\": 1,\r\n        \"name\": \"Product A\"    \r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/checkout",
+							"raw": "http://localhost:5000/api/v1/checkout/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -178,7 +169,8 @@
 							"path": [
 								"api",
 								"v1",
-								"checkout"
+								"checkout",
+								"1"
 							]
 						}
 					},
