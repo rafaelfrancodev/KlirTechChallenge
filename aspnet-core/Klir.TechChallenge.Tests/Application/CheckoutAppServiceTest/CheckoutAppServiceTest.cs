@@ -97,11 +97,11 @@ namespace Klir.TechChallenge.Tests.Application.CheckoutAppServiceTest
                     ,
                     shoppingCartItem.Quantity);
 
-            _checkoutDomainServiceMock.Setup(x => x.RemoveCartItem(It.IsAny<ShoppingCartItem>())).Returns(shoppingCartItemsEmpty);
+            _checkoutDomainServiceMock.Setup(x => x.RemoveCartItem(It.IsAny<int>())).Returns(shoppingCartItemsEmpty);
             
 
             //act
-            var result = _checkoutAppService.RemoveCartItem(shoppingCartInput);
+            var result = _checkoutAppService.RemoveCartItem(shoppingCartInput.Product.Id);
 
             //asset
             result.Products.Count().Should().Be(0);

@@ -35,11 +35,12 @@ namespace Klir.TechChallenge.Web.Api.Controllers
         }
 
         [HttpDelete]
+        [Route("{productId}")]
         [ProducesResponseType(typeof(CheckoutViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
-        public IActionResult Delete([FromBody] ShoppingCartItemInput input)
+        public IActionResult Delete([FromRoute] int productId)
         {
-            var result = _checkoutAppService.RemoveCartItem(input);
+            var result = _checkoutAppService.RemoveCartItem(productId);
             return Ok(result);
         }
     }

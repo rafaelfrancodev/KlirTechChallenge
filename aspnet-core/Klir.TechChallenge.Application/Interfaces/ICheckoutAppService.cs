@@ -6,7 +6,7 @@ namespace Klir.TechChallenge.Application.Interfaces
     public interface ICheckoutAppService
     {
         CheckoutViewModel AddCartItem(ShoppingCartItemInput cartItem);
-        CheckoutViewModel RemoveCartItem(ShoppingCartItemInput cartItem);
+        CheckoutViewModel RemoveCartItem(int productId);
         CheckoutViewModel GetCheckout();
     }
 }

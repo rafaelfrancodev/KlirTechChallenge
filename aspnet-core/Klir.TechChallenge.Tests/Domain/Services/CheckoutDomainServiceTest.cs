@@ -83,7 +83,7 @@ namespace Klir.TechChallenge.Tests.Domain.Services
             _checkoutDomainService.AddCartItem(shoppingCartItem);
 
             //act
-            _checkoutDomainService.RemoveCartItem(shoppingCartItem);
+            _checkoutDomainService.RemoveCartItem(shoppingCartItem.Product.Id);
 
             //asset
             _checkoutDomainService.GetCheckout().Products.Count.Should().Be(0);

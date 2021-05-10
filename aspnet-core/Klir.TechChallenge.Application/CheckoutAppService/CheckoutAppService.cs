@@ -21,9 +21,9 @@ namespace Klir.TechChallenge.Application.CheckoutAppService
             return entity.MapperCheckoutDomainToViewModel();
         }
 
-        public CheckoutViewModel RemoveCartItem(ShoppingCartItemInput cartItem)
+        public CheckoutViewModel RemoveCartItem(int productId)
         {
-            var entity = _checkoutDomainService.RemoveCartItem(cartItem.MapperShoppingCartInputToDomain());
+            var entity = _checkoutDomainService.RemoveCartItem(productId);
             return entity.MapperCheckoutDomainToViewModel();
         }
 

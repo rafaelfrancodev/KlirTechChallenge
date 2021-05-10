@@ -51,13 +51,13 @@ namespace Klir.TechChallenge.Domain.Services
             return _dataCheckout;
         }
 
-        public Checkout RemoveCartItem(ShoppingCartItem cartItem)
+        public Checkout RemoveCartItem(int productId)
         {
-            var foundProductInCart = _dataCheckout.Products.Where(x => x.Product.Id == cartItem.Product.Id);
+            var foundProductInCart = _dataCheckout.Products.Where(x => x.Product.Id == productId);
 
             if (foundProductInCart.Any())
             {
-                var cartItemToRemove = _dataCheckout.Products.SingleOrDefault(x => x.Product.Id == cartItem.Product.Id);
+                var cartItemToRemove = _dataCheckout.Products.SingleOrDefault(x => x.Product.Id == productId);
                 _dataCheckout.Products.Remove(cartItemToRemove);
             }
 

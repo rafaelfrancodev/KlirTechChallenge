@@ -1,26 +1,22 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatTableModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { HomeComponent } from './home/home.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { CartComponent } from './pages/cart/cart/cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
-    ProductsComponent
+    ProductsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,10 +29,11 @@ import { ProductsComponent } from './pages/products/products.component';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatIconModule,
+    MatTableModule,
     RouterModule.forRoot([
       { path: '', component: ProductsComponent, pathMatch: 'full' },
       { path: 'products', component: ProductsComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'cart', component: CartComponent },
     ])
   ],
   providers: [],
