@@ -7,11 +7,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Reflection;
 
 namespace Klir.TechChallenge.Web.Api
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         readonly string AllowSpecificOrigins = "_allowSpecificOrigins";
